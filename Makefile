@@ -12,3 +12,6 @@ clean:
 
 uninstall:
 	sudo rm -rf /usr/bin/gommit
+
+build-installer:
+	go build -ldflags="-s -w" -o build/linux-x86_64-gommit-installer installer-src/main.go
