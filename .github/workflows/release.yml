@@ -2,7 +2,10 @@ name: Build and Attach Installer
 
 on:
     release:
-        types: [created]
+        types: [published]
+
+permissions:
+    contents: write
 
 jobs:
     build:
